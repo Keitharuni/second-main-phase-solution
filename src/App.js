@@ -10,10 +10,10 @@ const useStyles = makeStyles({
   root: {
     padding: '20px',
     '& h2': {
-      fontSize: '18.5px'
+      fontSize: '16px'
     },
     '& h1': {
-      fontSize: '25px'
+      fontSize: '19px'
     }
   },
   checkmark: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
       content: "''",
       position: 'absolute',
       borderBottom: '2px solid darkgray',
-      height: '29px',
+      height: '25px',
       left: '28px',
       right: '28px'
     }
@@ -75,13 +75,13 @@ function App() {
         {/* Image Grid */}
         <Grid container item xs={12} spacing={1}>
           <Grid item s={5} xs={6}>
-            <img src={rxbottle} alt='Rx Bottle' height='350px' />
+            <img src={rxbottle} alt='Rx Bottle' height='200px' />
           </Grid>
           <Grid container item s={7} xs={6} spacing={1}>
-            <Grid item style={{ marginTop: '35px' }} xs={12}>
+            <Grid item xs={12}>
               <h1>First Month Supply</h1>
               <Grid item xs={12}>
-                <h2 style={{ color: 'gray' }}>
+                <h2 style={{ color: 'gray', fontWeight: 400 }}>
                   Generic Daily Cialis
                   <span>
                     <br></br>
@@ -172,35 +172,47 @@ function App() {
               <h2>Medical prescription valid for 12 months</h2>
             </Grid>
           </Grid>
-          <Grid item xs={2}>
-            <h2 className={classes.checkmark}>✔</h2>
+          <Grid container item xs={12} spacing={1}>
+            <Grid item xs={2}>
+              <h2 className={classes.checkmark}>✔</h2>
+            </Grid>
+            <Grid item xs={10}>
+              <h2>Monthly refills of 30 pills at less than $3 a pill</h2>
+            </Grid>
           </Grid>
-          <Grid item xs={10}>
-            <h2>Monthly refills of 30 pills at less than $3 a pill</h2>
+          <Grid container item xs={12} spacing={1}>
+            <Grid item xs={2}>
+              <h2 className={classes.checkmark}>✔</h2>
+            </Grid>
+            <Grid item xs={10}>
+              <h2>Free standard shipping in 2-3 days</h2>
+            </Grid>
           </Grid>
-          <Grid item xs={2}>
-            <h2 className={classes.checkmark}>✔</h2>
+          <Grid container item xs={12} spacing={1}>
+            <Grid item xs={2}>
+              <h2 className={classes.checkmark}>✔</h2>
+            </Grid>
+            <Grid item xs={10}>
+              <h2>30-Day money back guarantee</h2>
+            </Grid>
           </Grid>
-          <Grid item xs={10}>
-            <h2>Free standard shipping in 2-3 days</h2>
+
+          <Grid container item xs={12} spacing={1}>
+            <Grid item xs={2}>
+              <h2 className={classes.checkmark}> ✔</h2>{' '}
+            </Grid>
+            <Grid item xs={10}>
+              <h2>Adjustable monthly refills</h2>
+            </Grid>
           </Grid>
-          <Grid item xs={2}>
-            <h2 className={classes.checkmark}>✔</h2>
-          </Grid>
-          <Grid item xs={10}>
-            <h2>30-Day money back guarantee</h2>
-          </Grid>
-          <Grid item xs={2}>
-            <h2 className={classes.checkmark}> ✔</h2>{' '}
-          </Grid>
-          <Grid item xs={10}>
-            <h2>Adjustable monthly refills</h2>
-          </Grid>
-          <Grid item xs={2}>
-            <h2 className={classes.checkmark}>✔</h2>{' '}
-          </Grid>
-          <Grid item xs={10}>
-            <h2>Pause anytime</h2>
+
+          <Grid container item xs={12} spacing={1}>
+            <Grid item xs={2}>
+              <h2 className={classes.checkmark}>✔</h2>{' '}
+            </Grid>
+            <Grid item xs={10}>
+              <h2>Pause anytime</h2>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
