@@ -63,6 +63,7 @@ function App() {
         alignItems='center'
         justify='center'
         spacing={0}>
+        {/* Title Grid */}
         <Grid container item xs={12} spacing={3}>
           <Grid item xs={10}>
             <h1 className={classes.leftFloat}>Prescription Summary</h1>
@@ -71,6 +72,7 @@ function App() {
             <h1 className={classes.rightFloat}>$29</h1>
           </Grid>
         </Grid>
+        {/* Image Grid */}
         <Grid container item xs={12} spacing={1}>
           <Grid item s={5} xs={6}>
             <img src={rxbottle} alt='Rx Bottle' height='350px' />
@@ -90,6 +92,7 @@ function App() {
             </Grid>
           </Grid>
         </Grid>
+        {/* Consultation Grid */}
         <Grid container item xs={12} spacing={1}>
           <Grid container className={classes.linethrough} item xs={12}>
             <Grid item xs={10}>
@@ -118,10 +121,11 @@ function App() {
             </Grid>
           </Grid>
         </Grid>
-
+        {/* Horizontal Rule Grid */}
         <Grid item xs={12} spacing={1}>
           <hr></hr>
         </Grid>
+        {/* Subtotal Grid */}
         <Grid container item xs={12} spacing={1}>
           <Grid container item xs={12}>
             <Grid item xs={9}>
@@ -148,10 +152,11 @@ function App() {
             </Grid>
           </Grid>
         </Grid>
-
+        {/* Horizontal Rule Grid */}
         <Grid item xs={12} spacing={1}>
           <hr></hr>
         </Grid>
+        {/* Ending of Card Grid */}
         <Grid container item xs={12} spacing={1}>
           <Grid item xs={12}>
             <h2>
@@ -199,6 +204,7 @@ function App() {
           </Grid>
         </Grid>
       </Grid>
+      {/* Button */}
       <div className={classes.button}>
         <Button
           style={{ borderRadius: 0 }}
